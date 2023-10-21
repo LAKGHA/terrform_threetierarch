@@ -1,7 +1,7 @@
  #!/bin/bash
 export AWS_PAGER=""
 ACCOUNT_ID=$(aws sts get-caller-identity | jq -r .Account)
-REGION=us-west-1
+REGION=us-east-1
 
 # login to ECR
 echo "################### Login To ECR ###################"
